@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Site web adaptative avec l'utilisation de Frameworks HTML5 Boilerplate et Bootstrap, par Luis Felipe Rosas.</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+		<!-- Custom styles for this template Example: http://getbootstrap.com/examples/carousel/ for carousel-->
+		<link href="css/carousel.css" rel="stylesheet">
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <header class="header container"> <!-- Une balise HEADER qui contient le menu de navigation secondaire en haut de la page -->
+            <div class="col-lg-9 col-md-12 col-lg-offset-3 hidden-xs"><!-- Menu secondaire , pas visible dans les petits écrans -->
+                <nav class="navbar navbar-default navbar-static-top" role="navigation">
+				<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li><a href="#">Nous joindre</a></li>
+							<li><a href="#">Omnivox</a></li>
+							<li><a href="#">Moodle</a></li>
+							<li><a href="#">Bibliothèque</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Liens rapides <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Another action</a></li>
+									<li><a href="#">Something else here</a></li>
+									<li class="divider"></li>
+									<li><a href="#">Separated link</a></li>
+									<li class="divider"></li>
+									<li><a href="#">One more separated link</a></li>
+								</ul>
+							</li>
+						</ul>
+						<form class="navbar-form navbar-right hidden-sm" role="search">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Je cherche">
+							</div>
+							<button type="submit" class="btn btn-default">Chercher</button>
+						</form>
+					</div><!-- /.navbar-collapse -->
+				</nav>
+			</div><!-- / Menu secoindaire -->
+			<div class="row "><!-- Une autre division pour le logo du collège -->
+				<div class="col-lg-4 col-sm-12 col-md-6 logo">
+					<a href="#">
+						<img src="img/Logo.jpg" alt="Collège de Maisonneuve"><!-- logo -->
+					</a>
+				</div>
+			</div><!-- / -->
+		</header><!-- / Fin Header -->
+		<nav><!-- Menu de navegation principal -->
+			<div class="navbar navbar-inverse navbar-static-top" role="navigation">
+				<div class="container">
+					<div class="navbar-header"><!-- Menu de navegation principal pour les mobiles -->
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menuPrincipal">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse" id="menuPrincipal">
+						<ul class="nav nav-justified">
+							<li><a href="#">Maisonneuve</a></li>
+							<li><a href="#">Programme et formations</a></li>
+							<li><a href="#">Services aux étudiants</a></li>
+							<li><a href="#">Établissements affiliés</a></li>
+							<li><a href="#">Travailler à Maisonneuve</a></li>
+						</ul>
+					</div><!--/.nav-collapse -->
+				</div>
+			</div>
+		</nav><!-- / Menu de navegation principal -->
+		
+		<div class="container"><!-- Division principal -->
+		  <div class="row row-offcanvas row-offcanvas-right">
+			<div class="col-lg-9 col-md-9 col-xs-12 col-sm-12"><!-- configuration pour les différents écrans -->
+				<!-- Carousel au milieu du page, pas visible dans les petits écrans -->
+				<div id="myCarousel" class="carousel slide hidden-xs" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				  </ol>
+				  <div class="carousel-inner">
+					<div class="item active">
+					  <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="">
+					  <div class="container">
+						<div class="carousel-caption">
+						  <h1>Example headline.</h1>
+						  <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+						  <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+						</div>
+					  </div>
+					</div>
+					<div class="item">
+					  <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="">
+					  <div class="container">
+						<div class="carousel-caption">
+						  <h1>Another example headline.</h1>
+						  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+						  <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+						</div>
+					  </div>
+					</div>
+					<div class="item">
+					  <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="">
+					  <div class="container">
+						<div class="carousel-caption">
+						  <h1>One more for good measure.</h1>
+						  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+						  <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+				  <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+				</div><!-- /.carousel -->
+				<div class="row"><!-- Une autre division (comportement à 12 colonnes) pour les listes apuces -->
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="panel panel-default">
+							<div class="panel-heading etudiant"><!-- Une autre division (comportement à 12 colonnes) pour les listes apuces. Une classe pour chaque liste pour le donner la couleur -->
+								<h3 class="panel-title">FUTUR ÉTUDIANT</h3>
+							</div>
+							<!-- List group -->
+							<ul>
+								<li>Programmes préuniversitaires</li>
+								<li>Programmes techniques</li>
+								<li>Admission</li>
+								<li>Sports et études</li>
+								<li>Vie étudiante</li>
+								<li>Volet international</li>
+								<li>Test d'orientation</li>
+								<li>Coût des études</li>
+							</ul>
+						</div>					
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="panel panel-default">
+							<div class="panel-heading experience"><!-- Une classe pour chaque liste pour le donner la couleur -->
+								<h3 class="panel-title">VIVEZ L'EXPÉRIENCE</h3>
+							</div>
+							<!-- List group -->
+							<ul>
+								<li>Portes ouvertes</li>
+								<li>Soirée d'information</li>
+								<li>Étudiant d'un jour</li>
+								<li>Tournée des écoles secondaires</li>
+							</ul>
+						</div>					
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="panel panel-default">
+							<div class="panel-heading etudiantActuel"><!-- Une classe pour chaque liste pour le donner la couleur -->
+								<h3 class="panel-title">ÉTUDIANT ACTUEL</h3>
+							</div>
+							<!-- List group -->
+							<ul>
+								<li>Soutien psychologique</li>
+								<li>Orientation et cheminement scolaires</li>
+								<li>Aide à l'apprentissage</li>
+								<li>Aide financière</li>
+								<li>Activités étudiantes</li>
+								<li>Politiques, guides et procédures</li>
+								<li>Services complémentaires</li>
+								<li>Sites Web des départements</li>
+								<li>Emplois étudiants</li>
+								<li>Coop Maisonneuve</li>
+							</ul>
+						</div>					
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="panel panel-default">
+							<div class="panel-heading entreprises"><!-- Une classe pour chaque liste pour le donner la couleur -->
+								<h3 class="panel-title">ENTREPRISES</h3>
+							</div>
+							<!-- List group -->
+							<ul>
+								<li>Formation sur mesure</li>
+								<li>R & D</li>
+								<li>Location de salles</li>
+								<li>Embauchez un stagiare ou un diplômé</li>
+								<li>Cours de français langue seconde gratuits</li>
+								<li>Intégration des immigrants en technologies de l'information</li>
+							</ul>
+						</div>					
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="panel panel-default">
+							<div class="panel-heading communaute"><!-- Une classe pour chaque liste pour le donner la couleur -->
+								<h3 class="panel-title">COMMUNAUTÉ</h3>
+							</div>
+							<!-- List group -->
+							<ul>
+								<li>Camp de jour</li>
+								<li>Activités pour enfants</li>
+								<li>Activités pour adultes</li>
+								<li>Activités pour retratés</li>
+								<li>Location de salles</li>
+								<li>Soins dentaires</li>
+							</ul>
+						</div>					
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="panel panel-default">
+							<div class="panel-heading experience"><!-- Une class poour chaque liste pour le donner la couleur -->
+								<h3 class="panel-title">VIVEZ L'EXPÉRIENCE</h3>
+							</div>
+							<!-- List group -->
+							<ul>
+								<li>Programmes préuniversitaires</li>
+								<li>Programmes techniques</li>
+								<li>Admission</li>
+								<li>Sports et études</li>
+								<li>Vie étudiante</li>
+								<li>Volet international</li>
+								<li>Test d'orientation</li>
+								<li>Coût des études</li>
+							</ul>
+						</div>
+					</div>
+				</div><!--/row-->
+			</div><!--/span-->
+
+			<div class="col-lg-3 col-md-3 col-xs-6 col-sm-6"><!-- Une autre division qui floate à droite pour utiliser juste 3 col pour les écrans large et moyennes   -->
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">ADULTES</h3>
+					</div>
+					<div class="panel-body">
+						<h4><a href="">Formation continue</a> <span class="glyphicon glyphicon-hand-left"></span></h4>
+						<h4><a href="">École de langues</a> <span class="glyphicon glyphicon-hand-left"></span></h4>
+						<h4><a href="">Institut des procédés industriels</a> <span class="glyphicon glyphicon-hand-left"></span></h4>
+					</div>
+				</div>
+			</div><!--/class-->
+			<div class="col-lg-3 col-md-3 col-xs-6 col-sm-6"><!-- Une autre division qui floate à droite pour utiliser juste 3 col pour les écrans large et moyennes   -->
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<h4>ACTUALITÉS ET ÉVÉNEMENTS</h4>
+					</div>
+					<div class="panel-footer">
+						<div class="panel panel-info">
+							<div class="panel-heading">
+								<h3 class="panel-title">Une invitation au dépassement de soi</h3>
+							</div>
+							<div class="panel-body">
+								<span>Projet éducatif du Collège de Maisonneuve</span>
+							</div>
+						</div>
+						<div class="panel panel-info">
+							<div class="panel-heading">
+								<h3 class="panel-title">Maisonneuve - Vous y êtes presque</h3>
+							</div>
+							<div class="panel-body">
+								<span>Brochure 2014 - 2015</span>
+							</div>
+						</div>
+						<div class="panel panel-info">
+							<div class="panel-heading">
+								<h3 class="panel-title">Vous souhaitez en savoir plus sur Maisonneeuve</h3>
+							</div>
+							<div class="panel-body">
+								<span>2013 - 2014</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-xs-6 col-sm-6"><!-- Une autre division, comportement à 6 colonnes-->
+					<a href="#" class="thumbnail"><img class="social" src="img/ic-facebook.png"></a>
+				</div>
+				<div class="col-lg-6 col-md-6 col-xs-6 col-sm-6"><!-- Une autre division, comportement à 6 colonnes-->
+					<a href="#" class="thumbnail"><img class="social" src="img/ic-youtube.png"></a>
+				</div>
+			</div><!--/span--><!--/class-->
+		  </div><!--/row-->
+		  <hr>
+		  <footer><!-- Footer en bas de la page -->
+			<ul>
+				<li><a href="#">Nous joindre</a></li>
+				<li> - </li>
+				<li><a href="#">Plan du site</a></li>
+			</ul>
+			<p id="adresse">3800, rue Sherbrooke Est, Montréal, QC, H1X 2A2 | 514.254.7131</p>
+			<p>Collège de Maisonneuve &copy; 2009 Tous droits réservés</p>
+		  </footer>
+		</div><!--/.container-->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>

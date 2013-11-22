@@ -1,0 +1,121 @@
+/* ==========================================================================
+   Author's custom styles
+*	Site web adaptative avec l'utilisation de Frameworks HTML5 Boilerplate et Bootstrap.
+*	Author	: Luis Felipe Rosas
+*	Date	: 14-10-2013
+
+   ========================================================================== */
+
+body {
+	padding-top:0;
+    padding-bottom: 20px;
+}
+/* Ajout de la classe thumbnail et changements de border et box-shadow à none, sut tout pour IE*/
+header nav > .navbar-header > .thumbnail{
+	box-shadow:none;
+	border:none;
+}
+/* Un style et couleur specifique au menu principal */
+.nav > li > a{
+	color:#ffffff;
+}
+.nav > li > a:hover, .nav > li > a:focus{
+	color:#000;
+}
+.navbar-inverse{
+	background-color:#003777;
+	background-image:none;
+	z-index: 1;
+}
+.nav-justified > li > a {
+  margin-bottom: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+ }/* /*/
+/* À cause d'un bogue en Chrome dans la taille du menu secondaire en haut*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	/*.herder > div > nav .navbar-collapse */
+	.navbar-collapse {
+		padding-right:0;
+	}
+}
+/* Un margin au logo */
+.logo{
+	margin-bottom:15px;
+ }
+ /* Pour écraser la configuration par défaut*/
+ .panel-default > .panel-heading{
+	background-image: none;
+ }
+ /* Une classe pour chaque liste pour le donner la couleur dans */
+.etudiant{
+	background-image:linear-gradient(to bottom, #7ABF00 0px, #E8E8E8 110%) !important;/* avec un dégradé de couleur */
+}
+.etudiantActuel{
+	background-image:linear-gradient(to bottom, #0184A0 0px, #E8E8E8 110%) !important;/* avec un dégradé de couleur */
+}
+.entreprises{
+	background-image:linear-gradient(to bottom, #BE3926 0px, #E8E8E8 110%) !important;/* avec un dégradé de couleur */
+}
+.communaute{
+	background-image:linear-gradient(to bottom, #8E2B86 0px, #E8E8E8 110%) !important;/* avec un dégradé de couleur */
+}
+.experience{
+	background-image:linear-gradient(to bottom, #BE9F26 0px, #E8E8E8 110%) !important;/* avec un dégradé de couleur */
+}
+/*Pied de page*/
+footer ul{
+	display:inline;
+	margin:5px 0;
+	padding:0;
+}
+footer ul li{
+	display:inline;
+	color: #4FA3C8;
+}
+footer p:first-of-type{
+	margin:0;
+	float:right;
+}/*Fin Pied de page*/
+
+/* Pour donner une hauteur minimale à chaque bloc qui contienne les listes aux grands écrans */
+@media (min-width: 992px) {
+	.col-lg-4 > .panel > ul{
+		min-height: 222px;
+	}
+}/* / */
+/* ajouter des styles pour donner beauté au menu principal, quand il est entre 768px et 1200px*/
+@media (min-width: 768px) and (max-width: 1200px) {
+	.nav-justified > li > a {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		min-height: 60px;
+	}
+}/* / */
+/* Pour donner un meilleur aspect au menu principal quand il s'affcihe à plus de 768px  */
+@media (min-width: 768px) {
+  .nav-justified > li > a {
+    border-left: 1px solid #fff;
+  }
+  .nav-justified > li:first-child > a {
+    border-left: 0;
+  }
+  .nav-justified > li:last-child > a {
+    border-right: 0;
+  }
+}/* / */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
